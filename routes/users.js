@@ -1,12 +1,12 @@
-import { Router } from 'express'
+// import { Router } from 'express'
 
-const router = Router()
+// const router = Router()
 
-/* GET users listing. */
-router.get('/', function(req, res) {
-  res.send('respond with a resource')
-})
+// /* GET users listing. */
+// router.get('/', function(req, res) {
+//   res.send('respond with a resource')
+// })
 
-export {
-  router
-}
+// export {
+//   router
+// }
