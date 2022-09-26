@@ -1,9 +1,67 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #FFBC0A;
+  color: #264653;
+  background-color: #F4A261;
 }
 
 a {
   color: #0b46ea;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 352px));
+  font-size: 20px;
+}
+
+form * {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+form > button {
+  grid-column: span 2;
+  width: 160px;
+  margin-left: auto;
+  font-size: 22px;
+}
+
+body > nav {
+  grid-area: nav;
+  background-color: #E76F51;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
+}
+
+
+nav > i {
+  width: 34px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
+nav > a {
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #424748;
+}
+
+nav > a:visited {
+  color: #424748;
+}
+
+nav > a:hover {
+  color: #E9C46A;
+  background-color: #2A9D8F;
+}
+
+nav > a.active {
+  color: #E9C46A;
 }

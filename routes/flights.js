@@ -8,6 +8,9 @@ router.get('/', flightsCtrl.index)
 // GET /flights/new
 router.get('/new', flightsCtrl.new)
 
+// POST /movies
+router.post('/', flightsCtrl.create)
+
 export {
   router
 }
