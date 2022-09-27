@@ -8,7 +8,7 @@ router.get('/', flightsCtrl.index)
 // GET /flights/new
 router.get('/new', flightsCtrl.new)
 
-// POST /movies
+// POST /
 router.post('/', flightsCtrl.create)
 
 // DELETE /flights/:id
@@ -21,6 +21,8 @@ router.get("/:id", flightsCtrl.show)
 router.get("/:id/edit", flightsCtrl.edit)
 
 router.put("/:id", flightsCtrl.update)
+
+router.post("/:id/tickets", flightsCtrl.createTicket)
 
 export {
   router
