@@ -1,7 +1,13 @@
 </head>
 <body>
   <nav>
-		<i class="fa-solid fa-plane fa-2xl"></i>  
+		<i class="fa-solid fa-plane fa-2xl"></i> 
+    <a
+      href="/meals/new"
+      <%- title === "Add Meal" ? 'class="active"' : '' %> 
+    >
+      ADD MEAL
+    </a>
     <a 
       href="/flights/new" <%- title === 'Add Flights' ? 'class="active"' : '' %>
     >
