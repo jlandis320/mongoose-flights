@@ -12,6 +12,23 @@
   <a href="/flights/<%= flight._id %>/edit">
     <button id="edit-btn">Edit Flight Details</button>
   </a>
+
+  <div>Meals:</div>
+  <ul>
+    <% flight.meals.forEach(meal => { %> 
+      <li> <%= meal.name %> </li>
+    <% }) %> 
+  </ul>
+
+  <form id="add-meal-to-flight" action="???" method="POST">
+    <select name="mealId">
+      <% meals.forEach(meal => { %>
+        <option value="<%= meal._id %>"><%= meal.name %></option> 
+      <% }) %>
+    </select>
+    <button type="submit">Add to Flight</button>
+  </form>
+
   <h2>Tickets</h2>
   <form
   id="add-ticket-form"
