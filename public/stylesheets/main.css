@@ -9,8 +9,11 @@ html {
   /* height & width will now include border & padding by default
      but can be over-ridden as needed */
   box-sizing: inherit;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  margin-left: 10px;
 }
 
 body {
@@ -26,6 +29,7 @@ body {
     "main";
   font-size: 18px;
   grid-area: main;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body > main {
@@ -84,26 +88,30 @@ nav > a {
   color: #424748;
 }
 
-nav > a:visited {
-  color: #424748;
-}
-
 nav > a:hover {
   color: #E9C46A;
-  background-color: #2A9D8F;
+  background-color: #843920;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='43' height='52' viewport='0 0 100 100' style='fill:black;font-size:26px;'><text y='50%'>🛩</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 nav > a.active {
   color: #E9C46A;
 }
 
+button {
+  background-color:#F4A261;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 2px solid #E76F51;
 
-#edit-btn {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width:fit-content;
-  margin-left: auto;
-  font-size: 22px;
+}
+
+button:hover {
+  box-shadow: rgba(240, 95, 46, 0.4) 5px 5px;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='43' height='52' viewport='0 0 100 100' style='fill:black;font-size:26px;'><text y='50%'>🛩</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+select, input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .fas::before {

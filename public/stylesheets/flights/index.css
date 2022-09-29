@@ -1,0 +1,13 @@
+table {
+  border-spacing: 10px;
+}
+
+form {
+  display: inline;
+  width: fit-content;
+}
+
+form > button {
+  width: 41px;
+  margin-bottom: 10px;
+}
